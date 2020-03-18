@@ -1,5 +1,5 @@
 <template>
-        <div class="tile is-pulled-right">
+        <div class="tile is-pulled-right is-2">
             <div class="tile is-child box" style="background: rgba(0, 0, 0, 0.5);">
                 <p class="title is-1 has-text-white has-text-centered">{{time}}</p>
                 <p class="subtitle is-5 has-text-white has-text-centered">{{date}}</p>

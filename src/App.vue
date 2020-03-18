@@ -2,8 +2,15 @@
   <div id="app">
     <section class="hero-1 is-fullheight has-background-grey" style="background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url(https://bing.biturl.top/?resolution=1920&format=image&index=0&mkt=zh-CN);">
       <div class="hero-body">
-          <div class="container">
-            <Clock/>
+          <div class="tile">
+              <div class="tile is-parent is-vertical">
+                  <article class="tile is-child is-primary">
+                    <Clock/>
+                  </article>
+                  <article class="tile is-child is-primary">
+                    <Weather city-name="Kyoto" country-name="jp"/>
+                  </article>
+              </div>
           </div>
       </div>
     </section>
@@ -12,12 +19,14 @@
 
 <script>
   import Clock from "@/components/Clock";
+  import Weather from "@/components/Weather";
 
   export default {
     name: 'App',
     components: {
-      Clock
-    }
+        Weather,
+        Clock
+    },
   }
 </script>
 
