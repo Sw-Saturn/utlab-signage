@@ -16,15 +16,15 @@
         data() {
             return {
                 date: '1月1日 (日)',
-                time: '00:00:00'
+                time: '00:00:00',
             };
         },
-        mounted: function() {
+        mounted() {
             setInterval(() => {
                 this.date = moment(new Date()).locale('ja').format('MMMDo (ddd)');
                 this.time = moment(new Date()).locale('ja').format('LTS');
             }, 1000);
-        }
+        },
     }
 </script>
 
