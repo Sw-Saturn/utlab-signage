@@ -54,7 +54,7 @@
         },
         methods: {
             generateIconURL: function () {
-                const icon_url = 'http://openweathermap.org/img/w/';
+                const icon_url = 'https://openweathermap.org/img/w/';
                 return icon_url + this.condition.icon + '.png';
             },
         },
