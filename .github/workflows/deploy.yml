@@ -30,6 +30,7 @@ jobs:
       run: yarn build
       env:
         VUE_APP_WEATHER_APIKEY: ${{ secrets.VUE_APP_WEATHER_APIKEY }}
+        VUE_APP_NEWS_APIKEY: ${{ secrets.VUE_APP_NEWS_APIKEY }}
 
     - name: Deploy to gh-pages branch
       uses: peaceiris/actions-gh-pages@v3
