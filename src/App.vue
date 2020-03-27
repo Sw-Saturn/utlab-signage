@@ -1,32 +1,35 @@
 <template>
-  <div id="app">
-    <section class="hero-1 is-fullheight has-background-grey" style="background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url(https://bing.biturl.top/?resolution=1920&format=image&index=0&mkt=zh-CN);">
-      <div class="hero-body">
-          <div class="tile is-9 is-parent is-vertical">
-              <Clock/>
-              <Weather city-name="Kyoto" country-name="jp"/>
-          </div>
-          <div class="tile is-parent is-vertical">
-              <News/>
-          </div>
-      </div>
-    </section>
-  </div>
+    <div id="app">
+        <section class="hero-1 is-fullheight has-background-grey">
+            <div class="hero-body">
+                <div class="tile is-9 is-parent is-vertical">
+                    <Clock/>
+                    <Weather city-name="Kyoto" country-name="jp"/>
+                </div>
+                <div class="tile is-parent is-vertical">
+                    <News/>
+                </div>
+            </div>
+        </section>
+    </div>
 </template>
 
 <script>
-  import Clock from "@/components/Clock";
-  import Weather from "@/components/Weather";
-  import News from "@/components/News";
+    import Clock from "@/components/Clock";
+    import Weather from "@/components/Weather";
+    import News from "@/components/News";
 
-  export default {
-    name: 'App',
-    components: {
-        Weather,
-        Clock,
-        News
-    },
-  }
+    export default {
+        name: 'App',
+        components: {
+            Weather,
+            Clock,
+            News
+        },
+        computed: {
+
+        }
+    }
 </script>
 
 <style lang="scss">
@@ -35,18 +38,21 @@
     $size-2: 4.5rem;
     @import "~bulma/bulma";
     #app {
-    font-family: 'Roboto', Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    touch-action: none;
-    color: #2c3e50;
+        font-family: 'Roboto', Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        touch-action: none;
+        color: #2c3e50;
     }
     .hero-1{
-    @extend .hero;
-    background-size: cover;
-    background-position: center;
+        @extend .hero;
+        background-size: cover;
+        background-position: center;
+        background-image: linear-gradient(
+                        rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)),
+        url(https://bing.biturl.top/?resolution=1920&format=image&index=0&mkt=zh-CN);
     }
     .widget{
         background: rgba(0, 0, 0, 0.5);

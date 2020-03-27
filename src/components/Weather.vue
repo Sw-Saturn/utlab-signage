@@ -8,8 +8,12 @@
                     </p>
                 </figure>
                 <div class="media-content content">
-                    <p class="subtitle is-3 has-text-white has-text-left">{{this.city}}, {{this.countryName.toString().toUpperCase()}}</p>
-                    <p class="title is-2 has-text-white has-text-left">{{this.temp}}℃</p>
+                    <p class="subtitle is-3 has-text-white has-text-left">
+                        {{this.city}}, {{this.countryName.toString().toUpperCase()}}
+                    </p>
+                    <p class="title is-2 has-text-white has-text-left">
+                        {{this.temp}}℃
+                    </p>
                 </div>
             </article>
         </div>
@@ -52,7 +56,11 @@
             fetchWeather() {
                 const url = 'https://api.openweathermap.org/data/2.5/weather?q=';
                 const icon_url = 'https://openweathermap.org/img/w/';
-                axios.get(url + this.cityName + ',' + this.countryName + '&units=metric&appid=' + process.env.VUE_APP_WEATHER_APIKEY)
+                axios.get(url +
+                    this.cityName + ',' +
+                    this.countryName + '&units=metric&appid=' +
+                    process.env.VUE_APP_WEATHER_APIKEY
+                )
                     .then(function(response){
                         this.city = response.data.name;
                         this.temp = response.data.main.temp;
