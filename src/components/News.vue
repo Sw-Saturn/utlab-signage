@@ -9,7 +9,9 @@
                         </p>
                     </figure>
                     <div class="media-content content">
-                        <p class="subtitle is-5 has-text-white has-text-left">{{data.title}}</p>
+                        <p class="subtitle is-5 has-text-white has-text-left">
+                            {{data.title}}
+                        </p>
                     </div>
                 </article>
             </div>
