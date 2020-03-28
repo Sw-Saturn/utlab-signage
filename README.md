@@ -1,4 +1,7 @@
 # utlab-signage
+![CI](https://github.com/Sw-Saturn/utlab-signage/workflows/CI/badge.svg)
+![GitHub](https://img.shields.io/github/license/Sw-Saturn/utlab-signage)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/Sw-Saturn/utlab-signage)
 
 Digital signage for my laboratory.
 
@@ -6,6 +9,12 @@ Digital signage for my laboratory.
 See [this](https://sw-saturn.dev/utlab-signage).
 
 ## Requirement
+![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/Sw-Saturn/utlab-signage/axios)
+![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/Sw-Saturn/utlab-signage/bulma)
+![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/Sw-Saturn/utlab-signage/core-js)
+![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/Sw-Saturn/utlab-signage/moment)
+![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/Sw-Saturn/utlab-signage/vue)
+
 See [package.json](https://github.com/Sw-Saturn/utlab-signage/blob/master/package.json)
 
 ## Project setup
