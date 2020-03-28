@@ -2,6 +2,7 @@
 ![CI](https://github.com/Sw-Saturn/utlab-signage/workflows/CI/badge.svg)
 ![GitHub](https://img.shields.io/github/license/Sw-Saturn/utlab-signage)
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/Sw-Saturn/utlab-signage)
+![Website](https://img.shields.io/website?url=https%3A%2F%2Fsw-saturn.dev%2Futlab-signage)
 
 Digital signage for my laboratory.
 
