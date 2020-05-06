@@ -33,12 +33,12 @@
 </script>
 
 <style lang="scss">
-    $hero-body-padding: 100rem 15rem;
+    $hero-body-padding: 0rem 10rem;
     $size-1: 5rem;
     $size-2: 4.5rem;
     @import "~bulma/bulma";
     #app {
-        font-family: 'Roboto', Helvetica, Arial, sans-serif;
+        font-family: -apple-system, 'Roboto', Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         -webkit-touch-callout: none;
