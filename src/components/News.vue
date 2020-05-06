@@ -39,7 +39,7 @@
         },
         methods: {
             fetchNews() {
-                const url = 'https://newsapi.org/v2/top-headlines?country=jp&category=technology&pageSize=5&apiKey=';
+                const url = 'https://newsapi.org/v2/top-headlines?country=jp&pageSize=5&apiKey=';
                 axios.get(url + process.env.VUE_APP_NEWS_APIKEY)
                     .then(function(response){
                         this.news = response.data['articles'];
