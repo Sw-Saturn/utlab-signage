@@ -25,7 +25,7 @@
         name: "News",
         data() {
            return {
-               news : {
+               news: {
                    title: String,
                    urlToImage: String,
                },
@@ -39,12 +39,12 @@
         },
         methods: {
             fetchNews() {
-                const url = 'https://newsapi.org/v2/top-headlines?country=jp&pageSize=5&apiKey=';
+                const url = 'http://localhost:8080/v2/top-headlines?country=jp&pageSize=5&apiKey=';
                 axios.get(url + process.env.VUE_APP_NEWS_APIKEY)
-                    .then(function(response){
+                    .then((response) => {
                         this.news = response.data['articles'];
-                    }.bind(this))
-                    .catch(function(error){
+                    })
+                    .catch((error) => {
                         console.log(error)
                     });
             }
