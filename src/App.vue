@@ -43,6 +43,7 @@
         -moz-osx-font-smoothing: grayscale;
         -webkit-touch-callout: none;
         -webkit-user-select: none;
+        user-select: none;
         touch-action: none;
         color: #2c3e50;
     }
